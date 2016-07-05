@@ -8,29 +8,30 @@ Design a client/server application using recent C++ (11 and +) testing the prima
 The tcp port default is set to 22000.
 
 ### Server
-$ ./server
+`$ ./server`
 
 ### Client
-$ ./client <hostname> <number to test>
+`$ ./client <hostname> <number to test>`
 
 Example: `./client localhost 104729`
 
 ### testRunner
-$ ./testRunner
+`$ ./testRunner`
 
 The server is currently using two threads and can handle two clients simutaneously. You can manually test this by calling client with a long running test number and then calling with a smaller number in another thread. For example:
 Example: In terminal one run: `./client localhost 184467449` and in terminal two run: `./client localhost 65521`
 
 ## Notes
 Compiled and run using Xcode 7.3.1 on a Mac.
+
 This is using the following submodules:
-boost::asio 1.10.6 http://think-async.com/Asio/
-boost::math 1.61.0 http://www.boost.org/users/history/version_1_61_0.html
-boost::coroutine and dependencies
+- boost::asio 1.10.6 http://think-async.com/Asio/
+- boost::math 1.61.0 http://www.boost.org/users/history/version_1_61_0.html
+- boost::coroutine and dependencies
   - boost::thread
   - boost::system
   - boost::context
-googletest latest 
+- googletest latest 
 
 Basic Info on Primality Test [Wikipedia](https://en.wikipedia.org/wiki/Primality_test)
 
